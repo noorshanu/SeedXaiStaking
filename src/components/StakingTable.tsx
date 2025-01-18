@@ -36,6 +36,37 @@ const StakingTable = () => {
         "90D": "UP TO 0.19%",
       },
     },
+    {
+      id: 3,
+      icon: <SiBinance className="text-yellow-500 text-2xl" />,
+      name: "WBNB",
+      periods: ["30D", "60D", "90D"],
+      apr: "0.075% ~ 0.21%",
+      staked: "117.304 WBNB",
+      usdValue: "$30,550.31",
+      aprDetails: {
+        "30D": "UP TO 0.075%",
+        "60D": "UP TO 0.11%",
+        "90D": "UP TO 0.19%",
+      },
+      
+    },
+    {
+        id: 4,
+        icon: <SiBinance className="text-yellow-500 text-2xl" />,
+        name: "WBNB",
+        periods: ["30D", "60D", "90D"],
+        apr: "0.075% ~ 0.21%",
+        staked: "117.304 WBNB",
+        usdValue: "$30,550.31",
+        aprDetails: {
+          "30D": "UP TO 0.075%",
+          "60D": "UP TO 0.11%",
+          "90D": "UP TO 0.19%",
+        },
+        
+      },
+
   ];
 
   const toggleRow = (id: number) => {
@@ -51,9 +82,10 @@ const StakingTable = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-6">
+    <div className="container mx-auto px-4 py-6 relative z-50">
+    
       <div className="overflow-x-auto">
-        <table className="table-auto w-full text-sm text-left text-gray-400">
+        <table className="table-auto w-full text-sm text-left text-gray-400 box2 rounded-lg border border-purple-600  shadow-lg ">
           <thead className="bg-gray-800 text-gray-200 uppercase">
             <tr>
               <th scope="col" className="px-4 py-3">Stakes</th>

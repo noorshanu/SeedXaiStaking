@@ -20,18 +20,22 @@ function Hero() {
 
         {/* Main heading */}
         <h1 className="text-4xl sm:text-8xl  font-bold text-white mt-20 mb-6">
-          <span className="text-[#874DFF]">AI Agent</span> App Store
+          <span className="text-[#874DFF]"> Agent</span> Staking
         </h1>
 
         {/* Subheading */}
         <div className="space-y-2 mb-[8rem]">
           <p className="text-gray-300 text-lg sm:text-xl font-eculid">
-            Deploy AI Agents on Mode via partner applications.
+          Deploy AI Agents on Mode via partner applications.
           </p>
         </div>
 
         {/* CTA Button */}
-       
+        <div className=" ">
+          <button className="group font-eculid border bg-gray-800/60 hover:bg-gray-800/80 text-white px-8 py-3 rounded-full text-lg transition-all duration-300 flex items-center gap-2 mx-auto">
+            EXPLORE MARKETPLACE
+          </button>
+        </div>
       </div>
     </div>
   );
