@@ -137,7 +137,7 @@ const LaunchpadCards = () => {
                 className={`absolute top-4 right-4 px-3 py-1 rounded-full text-sm ${
                   item.saleStatus === "Sale Live"
                     ? "bg-green-500 text-white"
-                    : "bg-yellow-500 text-white"
+                    : " text-yellow-500 border border-yellow-500"
                 }`}
               >
                 {item.saleStatus}
