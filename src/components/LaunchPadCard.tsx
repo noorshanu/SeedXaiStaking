@@ -67,7 +67,7 @@ const LaunchpadCards = () => {
             placeholder="Type token symbol, address to find your launchpad"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className=" px-4 py-2 bg-gray-800 text-gray-200 border border-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
+            className=" w-full sm:w-1/3 px-4 py-2 bg-gray-800 text-gray-200 border border-gray-700 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
           />
 
           {/* Dropdowns */}
@@ -125,7 +125,7 @@ const LaunchpadCards = () => {
             key={item.id}
             className="w-[350px]  px-4 mb-6"
           >
-            <div className="bg-gray-800 text-gray-300 rounded-lg shadow-lg p-4 relative">
+            <div className="box2 border-purple-600 border text-gray-300 rounded-lg shadow-lg p-4 relative">
               {/* Icon */}
               <img
                 src={item.icon}
@@ -136,7 +136,7 @@ const LaunchpadCards = () => {
               <span
                 className={`absolute top-4 right-4 px-3 py-1 rounded-full text-sm ${
                   item.saleStatus === "Sale Live"
-                    ? "bg-green-500 text-white"
+                    ? "text-green-500 border border-green-500 "
                     : " text-yellow-500 border border-yellow-500"
                 }`}
               >
@@ -160,7 +160,7 @@ const LaunchpadCards = () => {
                 <p className=" text-xs mt-1">Progress (50%)</p>
                 <div className="relative h-2 w-full bg-gray-700 rounded-full mt-2">
                   <div
-                    className="absolute h-full bg-blue-500 rounded-full"
+                    className="absolute h-full bg-[#01A71F] rounded-full"
                     style={{ width: `${item.progress * 100}%` }}
                   ></div>
                 </div>
@@ -185,9 +185,9 @@ const LaunchpadCards = () => {
               {/* Countdown */}
               <div className="mt-4 border-t border-gray-700 pt-4">
                 <p className="text-sm">Sale Starts In</p>
-                <div className="flex justify-center space-x-2 mt-2">
+                <div className="flex justify-start space-x-2 mt-2">
                   {Object.entries(item.countdown).map(([key, value], idx) => (
-                    <div key={idx} className="text-center">
+                    <div key={idx} className="text-center p-1 px-2 border border-gray-700 rounded-md">
                       <span className="text-white text-lg font-bold">
                         {value.toString().padStart(2, "0")}
                       </span>

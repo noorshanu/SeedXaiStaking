@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 
-function Hero() {
+function Hero2() {
   return (
     <div className="h-auto py-10 sm:py-0   flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 relative">
       <img
@@ -21,7 +21,7 @@ function Hero() {
 
         {/* Main heading */}
         <h1 className="text-4xl sm:text-8xl  font-bold text-white mt-20 mb-6">
-          <span className="text-[#874DFF]"> Agent</span> Staking
+          <span className="text-[#874DFF]"> AOI</span> Launchpad
         </h1>
 
         {/* Subheading */}
@@ -36,10 +36,10 @@ function Hero() {
           <button className="group font-eculid border bg-gray-800/60 hover:bg-gray-800/80 text-white px-8 py-3 rounded-full text-lg transition-all duration-300 flex items-center gap-2 mx-auto">
             AI LIBRARY
           </button>
-          <Link href='/' className="group font-bold font-eculid border headerm hover:bg-gray-800/80 text-white px-8 py-3 rounded-full text-lg transition-all duration-300 flex items-center gap-2 mx-auto">
+          <Link href="/" className="group font-bold font-eculid border bg-gray-800/60 hover:bg-gray-800/80 text-white px-8 py-3 rounded-full text-lg transition-all duration-300 flex items-center gap-2 mx-auto">
        AGENTIC STAKING 
           </Link>
-          <Link href="/aoi-launchpad" className="group font-eculid border bg-gray-800/60 hover:bg-gray-800/80 text-white px-8 py-3 rounded-full text-lg transition-all duration-300 flex items-center gap-2 mx-auto">
+          <Link href="/aoi-launchpad" className="group font-eculid border headerm hover:bg-gray-800/80 text-white px-8 py-3 rounded-full text-lg transition-all duration-300 flex items-center gap-2 mx-auto">
             IOA LAUNCHPAD
           </Link>
           <button className="group font-eculid border bg-gray-800/60 hover:bg-gray-800/80 text-white px-8 py-3 rounded-full text-lg transition-all duration-300 flex items-center gap-2 mx-auto">
@@ -51,4 +51,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Hero2;
