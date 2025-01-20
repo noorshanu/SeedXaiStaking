@@ -84,24 +84,24 @@ const StakingTable = () => {
   return (
     <div className="container mx-auto px-4 py-6 relative z-50">
     
-      <div className="overflow-x-auto">
-        <table className="table-auto w-full text-sm text-left text-gray-400 box2 rounded-lg border border-purple-600  shadow-lg ">
-          <thead className="bg-gray-800 text-gray-200 uppercase">
+      <div className="overflow-x-auto rounded-xl border border-purple-600  shadow-lg">
+        <table className="table-auto w-full text-sm text-left text-gray-400 box2 rounded-lg  ">
+          <thead className="box1 border-b border-[#DF6344] text-gray-200 uppercase py-4">
             <tr>
-              <th scope="col" className="px-4 py-3">Stakes</th>
-              <th scope="col" className="px-4 py-3">Stakes Period</th>
-              <th scope="col" className="px-4 py-3">APR</th>
-              <th scope="col" className="px-4 py-3">Total Staked</th>
-              <th scope="col" className="px-4 py-3">Actions</th>
+              <th scope="col" className="px-4 py-6 text-xl font-bold font-sf">Stakes</th>
+              <th scope="col" className="px-4 py-6 text-xl font-bold font-sf">Stakes Period</th>
+              <th scope="col" className="px-4 py-6 text-xl font-bold font-sf">APR</th>
+              <th scope="col" className="px-4 py-6 text-xl font-bold font-sf">Total Staked</th>
+              <th scope="col" className="px-4 py-6 text-xl font-bold font-sf">Actions</th>
             </tr>
           </thead>
           <tbody>
             {data.map((item) => (
               <React.Fragment key={item.id}>
-                <tr className="border-b border-gray-700 hover:bg-gray-800">
+                <tr className="border-b border-[#6476E4] hover:bg-gray-800">
                   <td className="flex items-center px-4 py-3">
                     {item.icon}
-                    <span className="ml-2 font-medium text-white">
+                    <span className="ml-2 text-lg font-medium text-white">
                       {item.name}
                     </span>
                   </td>
@@ -109,7 +109,7 @@ const StakingTable = () => {
                     {item.periods.map((period, idx) => (
                       <span
                         key={idx}
-                        className="bg-gray-700 text-gray-200 px-2 py-1 rounded-full text-xs mr-2"
+                        className="bg-gray-700 border text-gray-200 px-2 py-1 rounded-full text-base mr-2"
                       >
                         {period}
                       </span>
@@ -120,7 +120,7 @@ const StakingTable = () => {
                     <p className="text-white">{item.staked}</p>
                     <p className="text-gray-500 text-xs">{item.usdValue}</p>
                   </td>
-                  <td className="px-4 py-3 text-right">
+                  <td className="px-4 py-3 text-center">
                     <button
                       className="text-blue-400 underline"
                       onClick={() => toggleRow(item.id)}
