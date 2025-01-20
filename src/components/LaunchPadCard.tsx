@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState } from "react";
-import { FaFire, FaHeart } from "react-icons/fa";
+import {  FaHeart } from "react-icons/fa";
 
 const LaunchpadCards = () => {
   const [search, setSearch] = useState("");
